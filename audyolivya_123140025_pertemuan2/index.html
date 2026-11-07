@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catatan Kuliah ITERA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1 id="sapaan">Catatan Kuliah</h1>
+      <p id="tanggal-waktu"></p>
+    </div>
+    <p class="kutipan">
+      <span id="kutipan-teks">Memuat kutipan...</span>
+      <small id="kutipan-penulis"></small>
+      <button type="button" id="btn-kutipan" class="btn btn-ghost">Kutipan lain</button>
+    </p>
+  </header>
+
+  <main class="layout">
+    <!-- Kolom kiri: cuaca dan form catatan -->
+    <aside class="kolom-kiri">
+      <section class="panel" aria-labelledby="judul-cuaca">
+        <h2 id="judul-cuaca">Cuaca di Kampus ITERA</h2>
+        <p class="cuaca-suhu" id="cuaca-suhu">--</p>
+        <p class="info" id="cuaca-info">Memuat data cuaca...</p>
+      </section>
+
+      <section class="panel" aria-labelledby="judul-form">
+        <h2 id="judul-form">Tambah Catatan</h2>
+        <form id="form-catatan" novalidate>
+          <input type="hidden" id="edit-id">
+
+          <div class="field">
+            <label for="judul">Judul catatan</label>
+            <input type="text" id="judul" placeholder="Contoh: Closure di JavaScript">
+            <small class="error" id="error-judul"></small>
+          </div>
+
+          <div class="field">
+            <label for="matkul">Mata kuliah</label>
+            <input type="text" id="matkul" placeholder="Contoh: Pemrograman Web">
+            <small class="error" id="error-matkul"></small>
+          </div>
+
+          <div class="field">
+            <label for="isi">Isi catatan</label>
+            <textarea id="isi" rows="6" placeholder="Tulis ringkasan materi di sini..."></textarea>
+            <small class="error" id="error-isi"></small>
+          </div>
+
+          <label class="centang" for="sematkan">
+            <input type="checkbox" id="sematkan">
+            Sematkan di bagian atas
+          </label>
+
+          <div class="aksi-form">
+            <button type="submit" id="btn-simpan" class="btn btn-primary">Simpan catatan</button>
+            <button type="button" id="btn-batal" class="btn btn-secondary" hidden>Batal edit</button>
+          </div>
+        </form>
+      </section>
+    </aside>
+
+    <!-- Kolom kanan: daftar catatan -->
+    <section class="panel" aria-labelledby="judul-daftar">
+      <div class="judul-daftar">
+        <h2 id="judul-daftar">Daftar Catatan</h2>
+        <p class="info" id="ringkasan"></p>
+      </div>
+
+      <div class="toolbar">
+        <input type="search" id="cari" placeholder="Cari judul atau isi catatan..." aria-label="Cari catatan">
+        <select id="filter-matkul" aria-label="Filter mata kuliah">
+          <option value="semua">Semua mata kuliah</option>
+        </select>
+      </div>
+
+      <ul class="daftar-catatan" id="daftar-catatan"></ul>
+
+      <div class="aksi-bawah">
+        <button type="button" id="btn-hapus-semua" class="btn btn-secondary">Hapus semua catatan</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
