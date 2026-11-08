@@ -1,0 +1,18 @@
+.stat-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-top: 5px solid var(--accent);
+  border-radius: 10px;
+  padding: 18px;
+}
+.stat-card.tone-baca { border-top-color: var(--warn); }
+.stat-card.tone-beli { border-top-color: var(--info); }
+.stat-card.tone-total { border-top-color: var(--ink); }
+
+.stat-label { margin: 0; color: var(--muted); font-weight: 600; }
+.stat-value { margin: 4px 0 10px; font-size: 2.2rem; font-weight: 700; line-height: 1.1; }
+.stat-bar { height: 8px; background: #e6ebea; border-radius: 999px; overflow: hidden; }
+.stat-bar-fill { height: 100%; background: var(--accent); }
+.tone-baca .stat-bar-fill { background: var(--warn); }
+.tone-beli .stat-bar-fill { background: var(--info); }
+.stat-percent { margin: 6px 0 0; color: var(--muted); font-size: .85rem; }

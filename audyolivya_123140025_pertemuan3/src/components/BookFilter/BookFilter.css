@@ -1,0 +1,10 @@
+.book-filter { display: grid; gap: 12px; margin-bottom: 16px; }
+.book-filter input[type="search"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+.filter-buttons { display: flex; gap: 8px; flex-wrap: wrap; }

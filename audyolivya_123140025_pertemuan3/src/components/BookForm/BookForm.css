@@ -1,0 +1,26 @@
+.book-form {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 20px;
+}
+.book-form h2 { margin: 0 0 16px; font-size: 1.15rem; }
+
+.form-field { margin-bottom: 14px; }
+.form-field label { display: block; font-weight: 600; margin-bottom: 4px; }
+.form-field input,
+.form-field select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #fff;
+  color: var(--ink);
+}
+.form-field input.input-error { border-color: var(--danger); }
+.error-text { color: var(--danger); margin: 4px 0 0; font-size: .9rem; }
+
+.form-actions { display: flex; gap: 10px; }
+.form-actions .btn-primary { flex: 1; }

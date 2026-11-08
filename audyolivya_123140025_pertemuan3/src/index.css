@@ -1,0 +1,48 @@
+:root {
+  --bg: #f1f5f4;
+  --surface: #ffffff;
+  --ink: #1c2b2a;
+  --muted: #5d6f6d;
+  --line: #d5dedc;
+  --accent: #0f766e;
+  --accent-dark: #0b5a54;
+  --warn: #b7791f;
+  --info: #2b6cb0;
+  --danger: #c0262d;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+/* Tombol */
+.btn {
+  border: 0;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+}
+.btn:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 3px solid #7cc4bd;
+  outline-offset: 1px;
+}
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:hover { background: var(--accent-dark); }
+.btn-secondary { background: #fff; color: var(--ink); border: 1px solid var(--ink); }
+.btn-secondary:hover { background: var(--ink); color: #fff; }
+.btn-small { padding: 6px 12px; font-size: .9rem; background: #e5f2f0; color: var(--accent-dark); }
+.btn-small:hover { background: var(--accent); color: #fff; }
+.btn-danger { background: #fbeaea; color: var(--danger); }
+.btn-danger:hover { background: var(--danger); color: #fff; }
+.btn-filter { background: #fff; color: var(--ink); border: 1px solid var(--line); padding: 7px 14px; }
+.btn-filter:hover { border-color: var(--accent); }
+.btn-filter.active { background: var(--accent); color: #fff; border-color: var(--accent); }
