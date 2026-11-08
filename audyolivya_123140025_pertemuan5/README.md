@@ -40,6 +40,4 @@ cd tugas_perpustakaan
 python main.py
 ```
 
-**Bukti eksekusi:**
-
-![output](screenshots/demonstrasi.png)
+![Output program](screenshot/demonstrasi.png)
