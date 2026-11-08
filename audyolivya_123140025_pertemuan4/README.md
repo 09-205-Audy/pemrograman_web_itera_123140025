@@ -1,9 +1,9 @@
 # Tugas Praktikum 4: Dasar Pemrograman Python
 
 ## Identitas
-- **Nama Lengkap:** [ISI NAMA LENGKAP]
+- **Nama Lengkap:** [Audy Olivya Br Gurusinga]
 - **NIM:** 123140025
-- **Kelas Praktikum:** [ISI KELAS]
+- **Kelas Praktikum:** [RB]
 
 ## Isi Folder
 ```
