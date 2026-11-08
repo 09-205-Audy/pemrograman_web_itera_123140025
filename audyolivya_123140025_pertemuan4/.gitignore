@@ -1,0 +1,7 @@
+# Folder cache yang dibuat otomatis oleh Python
+__pycache__/
+*.pyc
+
+# Lingkungan virtual (jika dipakai)
+.venv/
+venv/
